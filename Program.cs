@@ -2,8 +2,8 @@
 DbyourdatasourceEntities db = new DbyourdatasourceEntities();
  try
  {
-   SqlConnection bag = new SqlConnection(@"Data Source=WINDOWS-NLM6BJU\SQL2022;Initial Catalog=Dbkullanicilar;Integrated Security=True");
-   SqlCommand listele = new SqlCommand("Select * From tblkullanicilar", bag);
+   SqlConnection bag = new SqlConnection(@"yourdatasource");
+   SqlCommand listele = new SqlCommand("Select * From yourtablename", bag);
    SqlDataAdapter da = new SqlDataAdapter(listele);
    DataTable dt = new DataTable();
   da.Fill(dt);
